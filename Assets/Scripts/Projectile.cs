@@ -10,7 +10,6 @@ public class Projectile : MonoBehaviour
     [SerializeField] float projectileTimer = 1f;
     [SerializeField] Rigidbody2D rb;
     Animator animator;
-    bool gotHit = false;
     [SerializeField] AudioClip impactSound;
 
     /*   Vector3 shootDirection;

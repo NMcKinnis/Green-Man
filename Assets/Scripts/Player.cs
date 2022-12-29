@@ -24,8 +24,7 @@ public class Player : MonoBehaviour, MyInputActions.IPlayerActions
     bool _move = false;
     bool doubleJump = false;
     bool canShoot = true;
-    bool shootUnlocked = false;
-    bool x2Unlocked = false;
+
 
 
     public MyInputActions inputAction { get; private set; }
@@ -61,11 +60,6 @@ public class Player : MonoBehaviour, MyInputActions.IPlayerActions
             UpdateJumpState();
         }
 
-    }
-    public void UpdateUnlockBools()
-    {
-        if (PlayerPrefsControl.FeatureUnlocked("X2")) { x2Unlocked = true; }
-        if (PlayerPrefsControl.FeatureUnlocked("Shoot")) { shootUnlocked = true; }
     }
 
     private void UpdateJumpState()

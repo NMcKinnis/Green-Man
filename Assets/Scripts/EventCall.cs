@@ -24,7 +24,7 @@ public struct CurrencyUsageEvent
     }
 }
 
-public struct InsufficientCurrencyEvent { }
+public struct InsufficientCurrencyEvent { } //to add player feedback if there is not enough currency for the attempted purchase.
 
 
 
@@ -73,9 +73,9 @@ public struct StatusEvent
     }
 }
 
-public struct EntranceEvent { }
+public struct EntranceEvent { } //Refactor treasure chest opening, or other interactions
 
-public struct WaterEvent
+public struct WaterEvent //useful for adding environmental gravity effects to the player
 {
     public bool inWater;
 
