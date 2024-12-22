@@ -158,6 +158,7 @@ public class Player : MonoBehaviour, MyInputActions.IPlayerActions
             var myProjectile = Instantiate(projectile, projectileSpawnPoint.position, transform.rotation);
             myProjectile.GetComponent<Projectile>().SetDirectionAndShoot(IsFlipped());
             canShoot = false;
+            canShoot = false;
             StartCoroutine(ShootCooldown());
 
         }
